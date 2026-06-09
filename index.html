@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landjugend App | Tätigkeitsbericht</title>
+    <style>
+        :root {
+            --lj-green: #2e7d32; /* Typisches Grün, anpassen! */
+            --lj-light: #e8f5e9;
+            --text-dark: #1f2937;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            background-color: #f3f4f6;
+            color: var(--text-dark);
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--lj-green), #1b5e20);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 { margin-bottom: 10px; font-size: 2.8rem; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto 30px auto; }
+        
+        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        
+        .feature-list {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .feature-list h2 { color: var(--lj-green); margin-top: 0; }
+        .feature-list ul { padding-left: 20px; line-height: 1.8; }
+        
+        .legal-links {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+        }
+        .legal-links a {
+            color: var(--lj-green);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .legal-links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Landjugend App</h1>
+        <p>Der digitale Tätigkeitsbericht für deine Ortsgruppe. Schnell, offline-fähig und für den Bierzelt-Einsatz optimiert.</p>
+        </div>
+
+    <div class="container">
+        <div class="feature-list">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Turbo-Einträge:</strong> Erfasse Aktivitäten in Sekundenschnelle.</li>
+                <li><strong>Bierzelt-Modus:</strong> Massenauswahl von Teilnehmern für stressige Umgebungen.</li>
+                <li><strong>Offline-Fähigkeit:</strong> Daten erfassen, auch wenn im Festzelt kein Empfang ist.</li>
+                <li><strong>Automatischer Export:</strong> Generiere PDF- und Excel-Matrix-Exporte auf Knopfdruck.</li>
+            </ul>
+        </div>
+
+        <div class="legal-links">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutzerklärung</a>
+        </div>
+    </div>
+</body>
+</html>

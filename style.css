@@ -1,0 +1,150 @@
+/* --- Brand Colors (Same as Portfolio) --- */
+:root {
+    --primary-blue: #0066b3;
+    --accent-green: #9ebd35;
+    --highlight-orange: #faa61a;
+    
+    /* UI Palette */
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --card-bg: #ffffff;
+    --sub-text: #64748b;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Hero --- */
+.hero {
+    background-color: var(--card-bg);
+    padding-bottom: 60px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.hero-bar {
+    padding: 20px;
+    text-align: center;
+}
+
+.orange-logo {
+    background: rgba(250, 166, 26, 0.1);
+    color: var(--highlight-orange);
+    font-weight: 900;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 20px 0 10px 0;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    color: var(--sub-text);
+    margin: 0 0 40px 0;
+}
+
+/* --- CTA Button (App Style) --- */
+.cta-button {
+    background-color: var(--accent-green);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 18px 30px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(158, 189, 53, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    background-color: #a8cd43;
+}
+
+.cta-button .icon {
+    font-size: 1.6rem;
+}
+
+/* --- Main Content --- */
+.main-content {
+    padding: 60px 20px;
+}
+
+.main-content h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+/* --- Feature Cards --- */
+.feature-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.feature-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.date-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    background-color: #f1f5f9;
+    color: #475569;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center;
+    flex-shrink: 0;
+    margin-right: 25px;
+}
+
+/* Color Overrides for Date Boxes */
+.date-box.green { background-color: rgba(158, 189, 53, 0.1); color: var(--accent-green); }
+.date-box.blue { background-color: rgba(0, 102, 179, 0.1); color: var(--primary-blue); }
+
+.feature-text h3 {
+    margin: 0 0 5px 0;
+    color: var(--primary-blue);
+    font-size: 1.4rem;
+}
+
+.feature-text p {
+    margin: 0;
+    color: var(--sub-text);
+}
+
+/* --- Stats Cards (
