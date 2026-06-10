@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz - Landjugend App</title>
+    <style>
+        /* --- Brand Colors --- */
+        :root {
+            --primary-blue: #0066b3;
+            --accent-green: #9ebd35;
+            --highlight-orange: #faa61a;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+            --sub-text: #64748b;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* --- Navigation --- */
+        .top-nav {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--highlight-orange);
+        }
+
+        /* --- Header --- */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--card-bg);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: var(--primary-blue);
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+        }
+
+        .header p {
+            color: var(--sub-text);
+            font-size: 1.1rem;
+            margin: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Main Content --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 60px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* --- Content Cards --- */
+        .content-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .content-card h2 {
+            margin: 0 0 15px 0;
+            color: var(--primary-blue);
+            font-size: 1.4rem;
+            border-bottom: 2px solid rgba(0, 102, 179, 0.1);
+            padding-bottom: 10px;
+        }
+
+        .content-card h3 {
+            color: var(--text-color);
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .content-card p, .content-card ul {
+            margin: 0 0 15px 0;
+            color: var(--text-color);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .content-card ul {
+            padding-left: 20px;
+        }
+
+        .content-card a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .content-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: var(--sub-text);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+        }
+
+        .footer a:hover {
+            color: var(--primary-blue);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="top-nav">
+        <a href="index.html" class="back-link">&larr; Zurück zur App-Seite</a>
+    </nav>
+
+    <header class="header">
+        <h1>Datenschutzerklärung</h1>
+        <p>Informationen über die Erhebung und Verarbeitung deiner Daten in der Landjugend App.</p>
+    </header>
+
+    <main class="container">
+        
+        <!-- Card 1: Allgemeine Hinweise -->
+        <section class="content-card">
+            <h2>1. Datenschutz auf einen Blick</h2>
+            <h3>Allgemeine Hinweise</h3>
+            <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit deinen personenbezogenen Daten passiert, wenn du unsere App nutzt. Personenbezogene Daten sind alle Daten, mit denen du persönlich identifiziert werden kannst.</p>
+            <h3>Verantwortliche Stelle</h3>
+            <p>
+                <strong>[Dein Name]</strong><br>
+                [Deine Adresse]<br>
+                E-Mail: <a href="mailto:[Deine E-Mail]">[Deine E-Mail]</a>
+            </p>
+        </section>
+
+        <!-- Card 2: Datenverarbeitung in der App (Supabase) -->
+        <section class="content-card">
+            <h2>2. Datenerfassung in der App</h2>
+            <h3>Benutzerkonten & Authentifizierung</h3>
+            <p>Um die App nutzen zu können, ist eine Registrierung erforderlich. Für die Verwaltung der Benutzerkonten und die sichere Authentifizierung nutzen wir den Dienst <strong>Supabase</strong>. Dabei werden folgende Daten verarbeitet:</p>
+            <ul>
+                <li>E-Mail-Adresse</li>
+                <li>Passwort (verschlüsselt)</li>
+                <li>Ggf. Name und Zugehörigkeit zur Ortsgruppe</li>
+            </ul>
+            <h3>Datenbank (Inhalte der App)</h3>
+            <p>Die von dir in der App eingegebenen Daten (z.B. Aktivitäten, Mitgliederlisten, Anwesenheiten für den Tätigkeitsbericht) werden ebenfalls sicher über die Server von Supabase gespeichert. Wir haben entsprechende Sicherheitsvorkehrungen (Row Level Security) getroffen, damit nur autorisierte Mitglieder deiner Ortsgruppe Zugriff auf diese Daten haben.</p>
+        </section>
+
+        <!-- Card 3: Lokale Speicherung -->
+        <section class="content-card">
+            <h2>3. Lokale Speicherung (Offline-Funktion)</h2>
+            <p>Um die App auch ohne aktive Internetverbindung (z.B. im Bierzelt oder am Land) nutzbar zu machen, speichern wir temporäre Daten lokal auf deinem Gerät ab (z.B. über Shared Preferences oder lokale Caches). Diese Daten werden synchronisiert, sobald wieder eine Internetverbindung besteht.</p>
+        </section>
+
+        <!-- Card 4: Web-Hosting -->
+        <section class="content-card">
+            <h2>4. Hosting der Webseite (GitHub Pages)</h2>
+            <p>Diese Informationsseite (nicht die App selbst) wird bei <strong>GitHub Pages</strong> gehostet. Bei jedem Aufruf dieser Webseite erfasst der Provider automatisch Daten und speichert diese in sogenannten Server-Log-Dateien. Dazu gehören z.B. IP-Adresse, Browsertyp, Datum und Uhrzeit. Diese Daten sind technisch erforderlich, um die Webseite fehlerfrei darzustellen.</p>
+        </section>
+
+        <!-- Card 5: Deine Rechte -->
+        <section class="content-card">
+            <h2>5. Deine Rechte</h2>
+            <p>Du hast jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck deiner gespeicherten personenbezogenen Daten zu erhalten. Du hast außerdem ein Recht, die Berichtigung, Sperrung oder Löschung (z.B. Löschung des Accounts und der Ortsgruppe) dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz kannst du dich jederzeit an uns wenden.</p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href="impressum.html">Impressum</a>
+        <a href="anleitungen.html">Anleitungen</a>
+    </footer>
+
+</body>
+</html>

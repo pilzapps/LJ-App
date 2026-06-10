@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anleitungen - Landjugend App</title>
+    <style>
+        /* --- Brand Colors --- */
+        :root {
+            --primary-blue: #0066b3;
+            --accent-green: #9ebd35;
+            --highlight-orange: #faa61a;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+            --sub-text: #64748b;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* --- Navigation --- */
+        .top-nav {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--highlight-orange);
+        }
+
+        /* --- Header --- */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--card-bg);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: var(--primary-blue);
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+        }
+
+        .header p {
+            color: var(--sub-text);
+            font-size: 1.2rem;
+            margin: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Main Content & Grid --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 60px 20px;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        /* --- Guide Cards --- */
+        .guide-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.03);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            border-color: rgba(158, 189, 53, 0.3); /* Accent Green border on hover */
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+
+        /* Individual Card Colors */
+        .icon-green { background-color: rgba(158, 189, 53, 0.1); color: var(--accent-green); }
+        .icon-blue { background-color: rgba(0, 102, 179, 0.1); color: var(--primary-blue); }
+        .icon-orange { background-color: rgba(250, 166, 26, 0.1); color: var(--highlight-orange); }
+
+        .guide-card h3 {
+            margin: 0 0 10px 0;
+            color: var(--text-color);
+            font-size: 1.25rem;
+        }
+
+        .guide-card p {
+            margin: 0 0 20px 0;
+            color: var(--sub-text);
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+
+        .read-more {
+            color: var(--primary-blue);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: var(--sub-text);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+        }
+
+        .footer a:hover {
+            color: var(--primary-blue);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="top-nav">
+        <a href="index.html" class="back-link">&larr; Zurück zur Übersicht</a>
+    </nav>
+
+    <header class="header">
+        <h1>Anleitungen & Hilfe</h1>
+        <p>Hol das Maximum aus der Landjugend-App heraus. Hier findest du Schritt-für-Schritt-Erklärungen für alle wichtigen Funktionen.</p>
+    </header>
+
+    <main class="container">
+        <div class="guide-grid">
+            
+            <!-- Karte 1: Erste Schritte -->
+            <article class="guide-card">
+                <div class="icon-box icon-blue">🚀</div>
+                <h3>Erste Schritte</h3>
+                <p>Wie du deine Ortsgruppe anlegst, Vorstandsmitglieder einlädst und die App für das laufende Landjugend-Jahr einrichtest.</p>
+                <span class="read-more">Anleitung lesen &rarr;</span>
+            </article>
+
+            <!-- Karte 2: Bierzelt-Modus -->
+            <article class="guide-card">
+                <div class="icon-box icon-orange">🍻</div>
+                <h3>Turbo-Einträge & Bierzelt-Modus</h3>
+                <p>Perfekt für stressige Situationen: Wie du Massenauswahlen triffst und Teilnahmen in Rekordzeit direkt am Event erfasst.</p>
+                <span class="read-more">Anleitung lesen &rarr;</span>
+            </article>
+
+            <!-- Karte 3: Exporte -->
+            <article class="guide-card">
+                <div class="icon-box icon-green">📊</div>
+                <h3>Excel & PDF Export</h3>
+                <p>So generierst du mit einem Knopfdruck die fertige Excel-Matrix oder das PDF für den offiziellen Tätigkeitsbericht der Bezirks-/Landesorganisation.</p>
+                <span class="read-more">Anleitung lesen &rarr;</span>
+            </article>
+
+            <!-- Karte 4: Offline-Modus (Optional/Später) -->
+            <article class="guide-card">
+                <div class="icon-box icon-sub">📶</div>
+                <h3>Arbeiten ohne Internet</h3>
+                <p>Wie die App Eingaben zwischenspeichert, wenn du am Land bist und keinen Empfang hast, und wie der Sync später funktioniert.</p>
+                <span class="read-more">Anleitung lesen &rarr;</span>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+    </footer>
+
+</body>
+</html>
